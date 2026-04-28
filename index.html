@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jennifer Ren</title>
+    <meta
+      name="description"
+      content="Jennifer Ren's personal website: EECS at UC Berkeley with interests in computer architecture, ASIC design, and machine learning."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">Jennifer Ren</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">EECS @ University of California, Berkeley</p>
+            <h1>Designing thoughtful systems, from chips to human-facing experiences.</h1>
+            <p class="lede">
+              I'm Jennifer, an EECS sophomore interested in computer architecture,
+              ASIC design, and the ways AI can be used to improve complex systems.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View Projects</a>
+              <a
+                class="button button-secondary resume-trigger"
+                href="Jennifer_Ren_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open Resume
+              </a>
+            </div>
+            <ul class="quick-facts">
+              <li>Computer Architecture</li>
+              <li>ASIC Design</li>
+              <li>Machine Learning</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="photo-cluster">
+              <article class="image-card image-card-main">
+                <img
+                  class="gallery-image gallery-image-main"
+                  src="assets/headshot-main.jpg"
+                  alt="Portrait of Jennifer Ren"
+                />
+                <p class="image-caption">Nice to meet you! Welcome to my personal website!</p>
+              </article>
+              <article class="image-card image-card-art">
+                <img
+                  class="gallery-image gallery-image-art"
+                  src="assets/artwork.jpg"
+                  alt="Artistic self-portrait by Jennifer Ren"
+                />
+                <p class="image-caption">An artistic self portrait that I made in pen. </p>
+              </article>
+              <article class="image-card image-card-poker">
+                <img
+                  class="gallery-image gallery-image-poker"
+                  src="assets/poker.jpg"
+                  alt="Jennifer Ren playing poker"
+                />
+                <p class="image-caption">Poker is a hobby of mine, here I am playing at the Asian Poker Tour</p>
+              </article>
+            </div>
+            <div class="floating-card floating-card-bear">
+              <img class="floating-card-icon" src="cscat.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="floating-card floating-card-note">
+              <p class="card-label">Currently</p>
+              <p>Exploring AI for architecture optimization and semiconductor anomaly detection.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="about section-card" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>A technical focus with room for personality.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                Hi, I'm Jennifer, a sophomore studying Electrical Engineering and
+                Computer Science at UC Berkeley. I'm passionate about chip design
+                and optimization, especially in ASIC design and the ways AI can be
+                used to advance computer architecture.
+              </p>
+              <p>
+                I'm currently exploring these interests at BFAI Semiconductors,
+                where I work on applying computer vision to detect anomalies in the
+                semiconductor manufacturing process.
+              </p>
+              <p>
+                Outside the screen, you can usually find me figure skating,
+                painting, or playing poker.
+              </p>
+            </div>
+            <div class="about-highlights">
+              <article class="gallery-note">
+                <h3>What I care about</h3>
+                <p>
+                  Building efficient, elegant systems across hardware and software,
+                  with a bias toward technically ambitious work.
+                </p>
+              </article>
+              <article>
+                <h3>What I’m learning</h3>
+                <p>
+                  Computer architecture, digital design and ICs, machine learning,
+                  and the fundamentals behind scalable systems.
+                </p>
+              </article>
+              <article>
+                <h3>Beyond engineering</h3>
+                <p>
+                  Figure skating, graphic art, and poker all shape how I think
+                  about discipline, intuition, and pattern recognition.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Polished previews for technical work.</h2>
+            <p class="section-intro">
+              Take a look at some of my projects, which range from technical deep-dives to creative explorations. 
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-art project-art-dungeon">
+                <img
+                  class="project-image"
+                  src="assets/dungeon-game.png"
+                  alt="Screenshot of Jennifer Ren's procedurally generated dungeon game"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <h3>Procedurally Generated Dungeon Game</h3>
+                  <span>2025</span>
+                </div>
+                <p>
+                  A seed-based dungeon crawler that generates connected rooms and hallways,
+                  replacing traditional combat with a hazard-defusing objective.
+                </p>
+                <ul class="tag-list">
+                  <li>Java</li>
+                  <li>Game Systems</li>
+                  <li>Procedural Generation</li>
+                </ul>
+                <p class="project-note">
+                  The layout above is generated from a seed-based system of rooms and hallways, with
+                  hazards replacing traditional combat as the core challenge.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-art project-art-cpu">
+                <img
+                  class="project-image project-image-cpu"
+                  src="assets/cpu-project.png"
+                  alt="Screenshot of Jennifer Ren's CPU project"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <h3>3-Stage RISC-V CPU Project</h3>
+                  <span>2025</span>
+                </div>
+                <p>
+                  A three-stage processor project focused on building and testing a RISC-V CPU in
+                  SystemVerilog, with supporting memory and cache-related components.
+                </p>
+                <ul class="tag-list">
+                  <li>SystemVerilog</li>
+                  <li>RISC-V</li>
+                  <li>Computer Architecture</li>
+                </ul>
+                <p class="project-note">
+                  The processor diagram above highlights the multi-stage structure of the design and
+                  ties directly into my interest in computer architecture and hardware systems.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume section-card" id="resume">
+          <div class="section-heading">
+            <p class="eyebrow">Resume</p>
+            <h2>Coursework, teaching, and technical foundations.</h2>
+          </div>
+
+          <div class="resume-grid">
+            <div class="resume-summary">
+              <article>
+                <h3>Education</h3>
+                <p>University of California, Berkeley</p>
+                <p>B.S. in Electrical Engineering and Computer Science</p>
+                <p>Expected May 2028 · GPA: 3.75/4.00</p>
+              </article>
+
+              <article>
+                <h3>Experience</h3>
+                <ul class="resume-list">
+                  <li>CSM16A Senior Mentor</li>
+                  <li>CS61A Academic Intern</li>
+                  <li>Cal Women&apos;s Network Project Lead</li>
+                </ul>
+              </article>
+
+              <article>
+                <h3>Selected Coursework</h3>
+                <ul class="resume-list compact">
+                  <li>Computer Architecture</li>
+                  <li>Digital Design and IC</li>
+                  <li>Machine Learning</li>
+                  <li>Intro to AI</li>
+                  <li>Data Structures and Algorithms</li>
+                  <li>Signals and Systems</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="resume-panel">
+              <p>
+                The full resume is available as a PDF download. You can also replace this section
+                with an embedded preview if you want the document visible on the page.
+              </p>
+              <div class="resume-actions">
+                <a
+                  class="button button-primary resume-trigger"
+                  href="Jennifer_Ren_Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Resume PDF
+                </a>
+                <a class="button button-secondary resume-trigger" href="Jennifer_Ren_Resume.pdf" download>
+                  Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section-card" id="contact">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Reach out for internships, collaborations, or a quick hello.</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div>
+              <p>
+                This is my email and linkedIn, but I’m also open to connecting on Instagram or other platforms. Feel free to reach out about anything — I’m always happy to chat about tech, projects, or potential opportunities.
+              </p>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:jenren@berkeley.edu">jenren@berkeley.edu</a>
+              <a href="https://www.linkedin.com/in/jennifer-ren/" target="_blank" rel="noreferrer">
+                linkedin.com/in/jennifer-ren
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="confetti-layer" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
