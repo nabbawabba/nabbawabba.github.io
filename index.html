@@ -6,7 +6,7 @@
     <title>Jennifer Ren</title>
     <meta
       name="description"
-      content="Jennifer Ren's personal website: EECS at UC Berkeley with interests in computer architecture, ASIC design, and machine learning."
+      content="Jennifer Ren's personal website: EECS at UC Berkeley with interests in digital design, computer architecture, ASIC design, and ML for EDA."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,14 +34,14 @@
             <p class="eyebrow">EECS @ University of California, Berkeley</p>
             <h1>Designing thoughtful systems, from chips to human-facing experiences.</h1>
             <p class="lede">
-              I'm Jennifer, an EECS sophomore interested in computer architecture,
-              ASIC design, and the ways AI can be used to improve complex systems.
+              I'm Jennifer, an EECS junior interested in computer architecture,
+              ASIC design, and the ways AI can be used to improve how chips are built.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#projects">View Projects</a>
               <a
                 class="button button-secondary resume-trigger"
-                href="Jennifer_Ren_Resume.pdf?v=20260707"
+                href="Jennifer_Ren_Resume.pdf?v=20260929"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -51,7 +51,7 @@
             <ul class="quick-facts">
               <li>Computer Architecture</li>
               <li>ASIC Design</li>
-              <li>Machine Learning</li>
+              <li>ML for EDA</li>
             </ul>
           </div>
 
@@ -87,7 +87,7 @@
             </div>
             <div class="floating-card floating-card-note">
               <p class="card-label">Currently</p>
-              <p>Exploring AI for architecture optimization and semiconductor anomaly detection.</p>
+              <p>Researching AI-driven tapeout at Berkeley and tutoring EECS 151.</p>
             </div>
           </div>
         </section>
@@ -100,15 +100,19 @@
           <div class="about-grid">
             <div class="about-copy">
               <p>
-                Hi, I'm Jennifer, a sophomore studying Electrical Engineering and
+                Hi, I'm Jennifer, a junior studying Electrical Engineering and
                 Computer Science at UC Berkeley. I'm passionate about chip design
                 and optimization, especially in ASIC design and the ways AI can be
                 used to advance computer architecture.
               </p>
               <p>
-                I'm currently exploring these interests at BFAI Semiconductors,
-                where I work on applying computer vision to detect anomalies in the
-                semiconductor manufacturing process.
+                I'm currently an undergraduate researcher with Prof. Karandikar's
+                group, using agent loops to optimize RTL across the full
+                RTL-to-GDSII tapeout flow and integrating Cadence Jasper formal
+                verification into it. I'm also on course staff for EECS 151
+                (Digital Design &amp; Integrated Circuits), and a machine learning
+                intern at BFAI Semiconductor, building computer vision pipelines
+                for semiconductor defect detection.
               </p>
               <p>
                 Outside the screen, you can usually find me figure skating,
@@ -126,8 +130,8 @@
               <article>
                 <h3>What I’m learning</h3>
                 <p>
-                  Computer architecture, digital design and ICs, machine learning,
-                  and the fundamentals behind scalable systems.
+                  Digital design and ICs, design automation, formal verification,
+                  and the full ASIC flow from RTL to GDSII.
                 </p>
               </article>
               <article>
@@ -151,6 +155,65 @@
           </div>
 
           <div class="project-grid">
+            <article class="project-card">
+              <div class="project-art project-art-cpu">
+                <img
+                  class="project-image project-image-cpu"
+                  src="assets/cpu-floorplan.png"
+                  alt="Screenshot of Jennifer Ren's ASIC implementation layout for a RISC-V CPU project"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <h3>3-Stage Pipelined RISC-V CPU (EECS 151)</h3>
+                  <span>2026</span>
+                </div>
+                <p>
+                  A 3-stage pipelined RISC-V CPU in SystemVerilog with hazard detection, forwarding,
+                  stalls, and branch/jump flushing. Placed 1st on the class leaderboard by frequency,
+                  with a top-10 figure of merit.
+                </p>
+                <ul class="tag-list">
+                  <li>SystemVerilog</li>
+                  <li>Synopsys VCS/Verdi</li>
+                  <li>Cadence Genus/Innovus/Joules</li>
+                </ul>
+                <p class="project-note">
+                  Verified with assembly tests and post-synthesis simulation, then taken through
+                  synthesis, place-and-route, and power analysis. The view above is the routed layout.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-art project-art-data">
+                <img
+                  class="project-image"
+                  src="assets/sem-models.png"
+                  alt="Graphic of the four vision models Jennifer Ren benchmarked: Swin, Xception, TinyViT, and EfficientFormer"
+                />
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <h3>Semiconductor SEM Defect Classification (Carinthia)</h3>
+                  <span>2026</span>
+                </div>
+                <p>
+                  Benchmarked four vision models (Swin, Xception, TinyViT, EfficientFormer) for SEM
+                  defect classification in one shared PyTorch/timm multi-seed pipeline.
+                </p>
+                <ul class="tag-list">
+                  <li>Python</li>
+                  <li>PyTorch / timm</li>
+                  <li>Computer Vision</li>
+                </ul>
+                <p class="project-note">
+                  The best model reached 0.99 macro-F1, and imbalance-aware training lifted recall on
+                  the rarest class (55 images, ~73&times; long-tail) to 100%.
+                </p>
+              </div>
+            </article>
+
             <article class="project-card">
               <div class="project-art project-art-dungeon">
                 <img
@@ -179,42 +242,13 @@
                 </p>
               </div>
             </article>
-
-            <article class="project-card">
-              <div class="project-art project-art-cpu">
-                <img
-                  class="project-image project-image-cpu"
-                  src="assets/cpu-floorplan.png"
-                  alt="Screenshot of Jennifer Ren's ASIC implementation layout for a RISC-V CPU project"
-                />
-              </div>
-              <div class="project-body">
-                <div class="project-topline">
-                  <h3>3-Stage RISC-V CPU Project</h3>
-                  <span>2025</span>
-                </div>
-                <p>
-                  A three-stage processor project focused on building and testing a RISC-V CPU in
-                  SystemVerilog, with supporting memory and cache-related components.
-                </p>
-                <ul class="tag-list">
-                  <li>SystemVerilog</li>
-                  <li>RISC-V</li>
-                  <li>Computer Architecture</li>
-                </ul>
-                <p class="project-note">
-                  The implementation view above shows the routed physical layout of the project and
-                  ties the architecture work to backend chip design.
-                </p>
-              </div>
-            </article>
           </div>
         </section>
 
         <section class="resume section-card" id="resume">
           <div class="section-heading">
             <p class="eyebrow">Resume</p>
-            <h2>Coursework, teaching, and technical foundations.</h2>
+            <h2>Research, teaching, and technical foundations.</h2>
           </div>
 
           <div class="resume-grid">
@@ -223,15 +257,16 @@
                 <h3>Education</h3>
                 <p>University of California, Berkeley</p>
                 <p>B.S. in Electrical Engineering and Computer Science</p>
-                <p>Expected May 2028 · GPA: 3.75/4.00</p>
+                <p>Expected May 2028 · GPA: 3.8/4.0</p>
               </article>
 
               <article>
                 <h3>Experience</h3>
                 <ul class="resume-list">
-                  <li>CSM16A Senior Mentor</li>
-                  <li>CS61A Academic Intern</li>
-                  <li>Cal Women&apos;s Network Project Lead</li>
+                  <li>Undergraduate Researcher, AI-Driven Tapeout (UC Berkeley EECS)</li>
+                  <li>Course Staff, EECS 151 (Digital Design &amp; ICs)</li>
+                  <li>Machine Learning Intern, BFAI Semiconductor</li>
+                  <li>Coordinator, CSM66 (Computer Science Mentors)</li>
                 </ul>
               </article>
 
@@ -239,11 +274,24 @@
                 <h3>Selected Coursework</h3>
                 <ul class="resume-list compact">
                   <li>Computer Architecture</li>
-                  <li>Digital Design and IC</li>
+                  <li>Digital Design &amp; IC</li>
+                  <li>Design Automation</li>
+                  <li>Operating Systems</li>
                   <li>Machine Learning</li>
-                  <li>Intro to AI</li>
-                  <li>Data Structures and Algorithms</li>
-                  <li>Signals and Systems</li>
+                  <li>Computer Security</li>
+                  <li>Internet Protocols</li>
+                  <li>Signals &amp; Systems</li>
+                  <li>Circuits &amp; Devices</li>
+                  <li>Data Structures &amp; Algorithms</li>
+                </ul>
+              </article>
+
+              <article>
+                <h3>Skills</h3>
+                <ul class="resume-list">
+                  <li><strong>Languages:</strong> SystemVerilog, Verilog, Python, C, C++, Java, x86/RISC-V Assembly, Go</li>
+                  <li><strong>EDA:</strong> Synopsys VCS &amp; Verdi, Cadence Genus, Innovus &amp; Joules</li>
+                  <li><strong>Other:</strong> LTspice, Logisim, MATLAB, Oscilloscope, Spectrum Analyzer</li>
                 </ul>
               </article>
             </div>
@@ -251,7 +299,7 @@
             <div class="resume-panel">
               <div class="resume-embed" aria-label="Embedded resume preview">
                 <img
-                  src="Jennifer_Ren_Resume.pdf.png?v=20260707"
+                  src="Jennifer_Ren_Resume.pdf.png?v=20260929"
                   alt="Preview of Jennifer Ren's resume"
                   loading="lazy"
                 />
@@ -259,13 +307,13 @@
               <div class="resume-actions">
                 <a
                   class="button button-primary resume-trigger"
-                  href="Jennifer_Ren_Resume.pdf?v=20260707"
+                  href="Jennifer_Ren_Resume.pdf?v=20260929"
                   target="_blank"
                   rel="noreferrer"
                 >
                   View Resume PDF
                 </a>
-                <a class="button button-secondary resume-trigger" href="Jennifer_Ren_Resume.pdf?v=20260707" download>
+                <a class="button button-secondary resume-trigger" href="Jennifer_Ren_Resume.pdf?v=20260929" download>
                   Download Resume
                 </a>
               </div>
